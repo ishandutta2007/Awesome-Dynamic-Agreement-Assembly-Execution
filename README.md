@@ -15,25 +15,30 @@ This repository tracks notable **SaaS platforms** and **open-source projects** f
 Contributions welcome! Open an PR to add/update entries. Keep descriptions factual and link to official sites.
 
 ## Table of Contents
+- [Sector Overview & Market Dynamics](#sector-overview--market-dynamics)
 - [SaaS/Hosted Platforms](#saas-products)
 - [Open-Source GitHub Projects](#open-source-github-projects)
 - [How to Contribute](#how-to-contribute)
 - [Disclaimer](#disclaimer)
 
+## Sector Overview & Market Dynamics
+
+The global market for contract lifecycle management (CLM), document automation, and e-signatures represents an estimated **$15B–$22B+** ecosystem, expanding at ~13–25% CAGR as enterprise agreements shift from static templates to intelligent, dynamic workflows. The sector is **moderately fragmented yet top-heavy**: mega-cap digital document and signature infrastructure providers (e.g., Adobe, DocuSign) dominate core e-signature execution and broad horizontal workflows, while an active, fragmented ecosystem of enterprise CLM leaders and vertical document generation vendors captures specialized CPQ, CRM-native, and complex multi-clause assembly needs.
+
 ## SaaS/Hosted Platforms
 
-| Product | Description | Pricing (Starting) | Free Tier / Trial Limits |
-|---------|-------------|-------------------|--------------------------|
-| **[Conga Composer](https://www.conga.com/)** | Salesforce-native document generation with templates, data merging, and multi-format output. **30-day free trial with 10 user licenses** available. Discounts of up to 25% based on user volume, contract length, and commitment . | Quote-only (discounts up to 25% for volume/commitment); free trial with 10 users | **30-day free trial** (10 user licenses)  |
-| **[Nintex Drawloop DocGen](https://www.nintex.com/)** | Salesforce document generation with workflow automation. NSW Government contract listed at **$42,110.41** (estimated, inc GST) for a subscription including support and maintenance . | Quote-only (enterprise contract; government example ~$42K) | No free tier listed; demo via sales |
-| **[S-Docs](https://www.sdocs.com/)** | Salesforce-native document generation with **unlimited e-signature envelopes** on signature packages—no per-envelope fees. Free plan available (self-service, no guaranteed response times); paid plans add support and SLAs . | Quote-only (free plan available; paid plans for support/SLA) | **Free plan** available (self-service, no guaranteed support response)  |
-| **[Formstack Documents](https://www.formstack.com/)** | Document generation platform with templates and data merging. **Starting price: $99/month** (Software Advice). Suite pricing (Forms + Documents + Sign): **$250–$299/month** with 5,000 submissions per form and 10 GB storage . | **$99/month** (starting); Suite: $250–$299/month  | No free tier listed; trial available |
-| **[HotDocs](https://www.hotdocs.com/)** | Document automation and assembly platform. Software Advice lists a starting price (likely per-user; specific tier not detailed in search results). | Quote-only (per-user or enterprise) | Trial available via sales |
-| **[Windward Studios](https://www.windwardstudios.com/)** | Document generation and reporting platform with data-driven templates. Positioned for visually rich documents with charts and tables . | Quote-only | Trial available |
-| **[Adobe Acrobat Sign](https://www.adobe.com/sign.html)** | E-signature execution layer that integrates with document generation workflows. **Per-license billing** with seat subscriptions. | Acrobat Standard for teams: **$16.99/user/month** (annual) | Free Developer Edition + sandbox for API testing |
-| **[DocuSign Gen](https://www.docusign.com/)** | Salesforce-native document generation and e-signature. Integrated into DocuSign CLM and Salesforce workflows. | Quote-only (enterprise contract) | No free tier; demo via sales |
-| **[PandaDoc](https://www.pandadoc.com/)** | Document workflow platform with template-based generation and e-signature. Free eSign plan: 5 documents/month. | Starter: **$19/seat/month** (annual); Business: $49/seat/month | **Free**: 5 documents/month; **14-day trial**  |
-| **[Icertis Dynamic Agreement Engine](https://www.icertis.com/)** | Enterprise CLM with dynamic agreement assembly using clause libraries, rules-based fallback language, and AI-assisted drafting. | Quote-only (enterprise contract) | No free tier; demo via sales |
+| Product | Company Size (Valuation / Revenue) | Pricing (Starting) | Free Tier / Trial Limits | Description |
+|---------|------------------------------------|-------------------|--------------------------|-------------|
+| **[Adobe Acrobat Sign](https://www.adobe.com/sign.html)** | **~$26.0B** TTM Revenue / ~$200B+ Market Cap | **$16.99/user/month** (annual, Acrobat Standard for teams) | **30-day free trial** (up to 200 transaction units; 7-day trial on standard Pro bundles; permanent free Developer Sandbox) | E-signature execution layer that integrates with document generation workflows. Per-license billing with seat subscriptions. |
+| **[DocuSign Gen](https://www.docusign.com/)** | **~$3.36B** TTM Revenue / ~$10B–$12B Market Cap | **$20/user/month** (annual add-on for Salesforce; base eSign starts at $10/mo) | **30-day free trial** (Business Pro evaluation; permanent free account allows signing & up to 3–5 total sent envelopes) | Salesforce-native document generation and e-signature. Integrated into DocuSign CLM and Salesforce workflows. |
+| **[Icertis Dynamic Agreement Engine](https://www.icertis.com/)** | **$5.0B** Valuation / ~$300M–$350M ARR | **~$150–$350/user/month** (enterprise contracts; median ACV starting ~$100,000/yr) | **No free self-serve trial** (guided enterprise demo & custom sandbox POC only) | Enterprise CLM with dynamic agreement assembly using clause libraries, rules-based fallback language, and AI-assisted drafting. |
+| **[Nintex Drawloop DocGen](https://www.nintex.com/)** | **~$2.0B** Valuation / ~$250M ARR | **$5,000/company/year** (or ~$12–$20/user/month equivalent) | **30-day free trial** (includes 5 full user licenses via Salesforce AppExchange + sandbox testing) | Salesforce document generation with workflow automation. NSW Government contract listed at $42,110.41 (estimated, inc GST) for enterprise deployment. |
+| **[HotDocs](https://www.hotdocs.com/)** | **~$1.6B** Parent Valuation (Mitratech) / ~$150M–$220M Revenue | **$25/user/month** (or ~$125/month for small team base package) | **30-day evaluation trial** (requires sales-assisted license token; or guided live demo) | Document automation and assembly platform with enterprise rules engines for legal and commercial document suites. |
+| **[PandaDoc](https://www.pandadoc.com/)** | **$1.0B** Valuation / ~$100M ARR | **$19/user/month** (billed annually; $35/mo month-to-month) | **14-day free trial** (full access) + **Free forever eSign plan** (up to 5 document uploads & signatures/month) | Document workflow platform with template-based generation and e-signature. |
+| **[Conga Composer](https://www.conga.com/)** | **~$715M+** Acquisition Basis / ~$200M–$388M ARR | **$35/user/month** (annual baseline contract; discounts up to 25% for high-volume commitments) | **30-day free trial** (includes 10 user licenses with AppExchange install) | Salesforce-native document generation with templates, data merging, and multi-format output. |
+| **[Formstack Documents](https://www.formstack.com/)** | **$425M** Valuation / ~$35M–$55M ARR | **$99/month** (Starter tier; Suite starts at $250–$299/month) | **14-day free trial** (full feature access without credit card) | Document generation platform with templates and data merging. |
+| **[S-Docs](https://www.sdocs.com/)** | Bootstrapped / **~$6.6M** ARR | **$25/user/month** (billed annually; minimum contract requirement of $3,000/year) | **Free forever plan** (unlimited users & templates; capped at 150 document generations & 50 e-signatures total) | Salesforce-native document generation with unlimited e-signature envelopes on signature packages—no per-envelope fees. |
+| **[Windward Studios](https://www.windwardstudios.com/)** | Acquired (Apryse) / **~$4.6M** Pre-Acquisition Revenue | **$209/month** (Flex model starting tier; Pro pay-per-server at $496/month) | **14-to-30-day free trial** (evaluation watermark and output cap; no credit card required) | Document generation and reporting platform with data-driven templates. Positioned for visually rich documents with charts and tables. |
 
 ## Open-Source GitHub Projects
 
