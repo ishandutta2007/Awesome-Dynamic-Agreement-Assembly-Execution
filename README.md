@@ -6,7 +6,7 @@
 
 <p align="center">
   <a href="https://github.com/ishandutta2007/Awesome-Awesome-Awesome"><img src="https://img.shields.io/badge/Awesome-%E2%9C%94-blueviolet?style=flat-square&logo=github" alt="Awesome"/></a><a href="https://discord.gg/jc4xtF58Ve"><img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=whtte" alt="Discord" /></a>
-  <a href="https://github.com/ishandutta2007/Awesome-Dynamic-Agreement-Assembly-Execution/stargazers"><img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-Dynamic-Agreement-Assembly-Execution?style=social" alt="GitHub Stars" /></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Dynamic-Agreement-Assembly-Execution/stargazers"><img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-Dynamic-Agreement-Assembly-Execution?style=social" alt="GitHub_Stars" /></a>
   <a href="https://github.com/ishandutta2007/Awesome-Dynamic-Agreement-Assembly-Execution/network/members"><img src="https://img.shields.io/github/forks/ishandutta2007/Awesome-Dynamic-Agreement-Assembly-Execution?style=social" alt="GitHub Forks" /></a>
   <a href="https://github.com/ishandutta2007/Awesome-Dynamic-Agreement-Assembly-Execution/issues"><img src="https://img.shields.io/github/issues/ishandutta2007/Awesome-Dynamic-Agreement-Assembly-Execution?style=flat-square&color=blue" alt="Issues" /></a>
   <a href="https://github.com/ishandutta2007/Awesome-Dynamic-Agreement-Assembly-Execution/blob/main/LICENSE"><img src="https://img.shields.io/badge/License-MIT-green.svg?style=flat-square" alt="License" /></a>
@@ -68,9 +68,9 @@ The global market for contract lifecycle management (CLM), document automation, 
 
 ## 💻 Open-Source GitHub Projects
 
-Sorted by GitHub star count (descending) 🌟. All star badges link directly to the repository's stargazers page.
+Sorted by GitHub Stars_Count (descending) 🌟. All Stars_Badges link directly to the repository's stargazers page.
 
-| Project | Star Badge | Description | Category |
+| Project | Stars_Badge | Description | Category |
 |:---|:---|:---|:---|
 | **[DocuSeal](https://github.com/docusealco/docuseal)** | [![Stars](https://img.shields.io/github/stars/docusealco/docuseal?style=social&color=white)](https://github.com/docusealco/docuseal/stargazers) | ✍️ **Open-source DocuSign alternative platform.** Ruby/Vue. Provides an intuitive web UI, mobile-optimized signing, automated form builder, PDF field mapping, webhooks, and REST API. Best for teams embedding document signing and legal agreement completion directly into web applications. | E-Signature Platform |
 | **[Documenso](https://github.com/documenso/documenso)** | [![Stars](https://img.shields.io/github/stars/documenso/documenso?style=social&color=white)](https://github.com/documenso/documenso/stargazers) | 🖋️ **The open-source digital signing infrastructure.** Next.js, TypeScript, Prisma. Comprehensive document signing platform with team management, crypto-verifiable audit logs, public signing links, and developer-first REST/GraphQL APIs. | E-Signature Platform |
@@ -120,7 +120,7 @@ Contributions make the open-source community thrive! 🚀
 1. 🍴 **Fork the repository**
 2. 🌿 **Create your feature branch** (`git checkout -b feature/AddAwesomeTool`)
 3. 📝 **Add/edit entries in `README.md`** (maintain alphabetical order in SaaS and star-count order in Open-Source)
-4. 💡 **Include**: Tool name, official site/repo link, star badge, precise pricing or licensing, and an objective description.
+4. 💡 **Include**: Tool name, official site/repo link, Stars_Badge, precise pricing or licensing, and an objective description.
 5. 📤 **Commit and push your changes** (`git commit -m 'feat: Add AwesomeTool to Open-Source list'`)
 6. 🎯 **Open a Pull Request** with a brief summary of the project.
 
