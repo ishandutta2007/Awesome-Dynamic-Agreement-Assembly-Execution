@@ -1,0 +1,160 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 420" width="100%" height="100%">
+  <defs>
+    <!-- Background Gradients -->
+    <linearGradient id="bg-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a0f1d" />
+      <stop offset="50%" stop-color="#0e172a" />
+      <stop offset="100%" stop-color="#070b14" />
+    </linearGradient>
+
+    <!-- Accent Gradients -->
+    <linearGradient id="title-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#60a5fa" />
+      <stop offset="50%" stop-color="#a855f7" />
+      <stop offset="100%" stop-color="#ec4899" />
+    </linearGradient>
+
+    <linearGradient id="cyan-indigo" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#06b6d4" />
+      <stop offset="100%" stop-color="#6366f1" />
+    </linearGradient>
+
+    <linearGradient id="glow-card" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e293b" stop-opacity="0.8" />
+      <stop offset="100%" stop-color="#0f172a" stop-opacity="0.9" />
+    </linearGradient>
+
+    <!-- Grid Pattern -->
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#334155" stroke-width="0.75" stroke-opacity="0.3" />
+      <circle cx="40" cy="40" r="1.5" fill="#475569" fill-opacity="0.5" />
+    </pattern>
+
+    <!-- Ambient Glow Filter -->
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="60" result="blur" />
+    </filter>
+    <filter id="pill-glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <style>
+    .code-font { font-family: 'JetBrains Mono', 'Fira Code', 'Courier New', monospace; }
+    .main-font { font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; }
+    
+    /* Background Dynamic Animations */
+    @keyframes orb-float-1 {
+      0%, 100% { transform: translate(0px, 0px) scale(1); }
+      50% { transform: translate(60px, 30px) scale(1.15); }
+    }
+    @keyframes orb-float-2 {
+      0%, 100% { transform: translate(0px, 0px) scale(1); }
+      50% { transform: translate(-50px, -25px) scale(1.2); }
+    }
+    @keyframes pulse-flow {
+      0% { stroke-dashoffset: 200; opacity: 0.3; }
+      50% { opacity: 0.9; }
+      100% { stroke-dashoffset: 0; opacity: 0.3; }
+    }
+    @keyframes card-shift-1 {
+      0%, 100% { transform: translateY(0px); }
+      50% { transform: translateY(-8px); }
+    }
+    @keyframes card-shift-2 {
+      0%, 100% { transform: translateY(0px); }
+      50% { transform: translateY(8px); }
+    }
+
+    .orb1 { animation: orb-float-1 12s ease-in-out infinite; transform-origin: center; }
+    .orb2 { animation: orb-float-2 15s ease-in-out infinite; transform-origin: center; }
+    .flow-line { stroke-dasharray: 12 8; animation: pulse-flow 6s linear infinite; }
+    .flow-line-rev { stroke-dasharray: 8 6; animation: pulse-flow 5s linear infinite reverse; }
+    .card-float1 { animation: card-shift-1 7s ease-in-out infinite; }
+    .card-float2 { animation: card-shift-2 8s ease-in-out infinite; }
+  </style>
+
+  <!-- Canvas Background -->
+  <rect width="1200" height="420" fill="url(#bg-grad)" rx="16" />
+  <rect width="1200" height="420" fill="url(#grid)" rx="16" />
+
+  <!-- Dynamic Background Glowing Orbs (Never overlaps text) -->
+  <g filter="url(#glow)">
+    <circle class="orb1" cx="220" cy="110" r="140" fill="#3b82f6" opacity="0.18" />
+    <circle class="orb2" cx="1020" cy="300" r="160" fill="#a855f7" opacity="0.22" />
+    <circle class="orb1" cx="950" cy="90" r="120" fill="#ec4899" opacity="0.15" />
+    <circle class="orb2" cx="100" cy="340" r="110" fill="#06b6d4" opacity="0.15" />
+  </g>
+
+  <!-- Dynamic Connecting Data Flow Lines in Background -->
+  <g opacity="0.45">
+    <path class="flow-line" d="M 50 80 Q 300 20, 600 80 T 1150 80" fill="none" stroke="#60a5fa" stroke-width="2" />
+    <path class="flow-line-rev" d="M 50 360 Q 400 410, 750 360 T 1150 340" fill="none" stroke="#c084fc" stroke-width="2" />
+  </g>
+
+  <!-- Left Floating Tech Card (Dynamic Aspect) -->
+  <g class="card-float1" transform="translate(60, 240)">
+    <rect width="210" height="74" rx="12" fill="url(#glow-card)" stroke="#334155" stroke-width="1.2" />
+    <circle cx="28" cy="37" r="14" fill="#3b82f6" fill-opacity="0.2" stroke="#60a5fa" stroke-width="1.5" />
+    <text x="28" y="42" text-anchor="middle" font-size="14" fill="#60a5fa">⚡</text>
+    <text class="main-font" x="52" y="32" font-size="13" font-weight="700" fill="#f8fafc">Template Merging</text>
+    <text class="code-font" x="52" y="52" font-size="11" fill="#94a3b8">{data} → DOCX / PDF</text>
+  </g>
+
+  <!-- Right Floating Tech Card (Dynamic Aspect) -->
+  <g class="card-float2" transform="translate(930, 240)">
+    <rect width="210" height="74" rx="12" fill="url(#glow-card)" stroke="#334155" stroke-width="1.2" />
+    <circle cx="28" cy="37" r="14" fill="#10b981" fill-opacity="0.2" stroke="#34d399" stroke-width="1.5" />
+    <text x="28" y="42" text-anchor="middle" font-size="14" fill="#34d399">✍</text>
+    <text class="main-font" x="52" y="32" font-size="13" font-weight="700" fill="#f8fafc">e-Sign Execution</text>
+    <text class="code-font" x="52" y="52" font-size="11" fill="#94a3b8">ESIGN / eIDAS Compliant</text>
+  </g>
+
+  <!-- Center Foreground Content: Guarantees 100% Readability -->
+  <!-- Top Category Pill -->
+  <g transform="translate(600, 70)">
+    <rect x="-160" y="-16" width="320" height="32" rx="16" fill="#1e1b4b" stroke="#6366f1" stroke-width="1.2" />
+    <circle cx="-140" cy="0" r="4" fill="#22c55e" />
+    <text class="main-font" x="8" y="5" text-anchor="middle" font-size="12" font-weight="600" fill="#c7d2fe" letter-spacing="1.2">CURATED ECOSYSTEM DIRECTORY</text>
+  </g>
+
+  <!-- Main Title -->
+  <text class="main-font" x="600" y="145" text-anchor="middle" font-size="44" font-weight="900" fill="url(#title-grad)" letter-spacing="-0.5">
+    Dynamic Agreement Assembly &amp; Execution
+  </text>
+
+  <!-- Subtitle -->
+  <text class="main-font" x="600" y="185" text-anchor="middle" font-size="18" font-weight="500" fill="#cbd5e1" letter-spacing="0.2">
+    Next-Gen Document Generation • Dynamic Clause Merging • Open-Source E-Signature
+  </text>
+
+  <!-- Interactive / Feature Badges in Foreground -->
+  <g class="main-font" transform="translate(600, 245)">
+    <!-- Pill 1: CLM & CPQ -->
+    <g transform="translate(-255, 0)">
+      <rect x="-75" y="-15" width="150" height="30" rx="15" fill="#1e293b" stroke="#475569" stroke-width="1" />
+      <text x="0" y="5" text-anchor="middle" font-size="12" font-weight="600" fill="#93c5fd">📄 Smart CLM &amp; CPQ</text>
+    </g>
+    <!-- Pill 2: Open Source Engines -->
+    <g transform="translate(-85, 0)">
+      <rect x="-80" y="-15" width="160" height="30" rx="15" fill="#1e293b" stroke="#475569" stroke-width="1" />
+      <text x="0" y="5" text-anchor="middle" font-size="12" font-weight="600" fill="#c084fc">⚙ Template Engines</text>
+    </g>
+    <!-- Pill 3: E-Signature Layer -->
+    <g transform="translate(90, 0)">
+      <rect x="-80" y="-15" width="160" height="30" rx="15" fill="#1e293b" stroke="#475569" stroke-width="1" />
+      <text x="0" y="5" text-anchor="middle" font-size="12" font-weight="600" fill="#f472b6">✒ E-Sign Infrastructure</text>
+    </g>
+    <!-- Pill 4: Zero Vendor Lock-in -->
+    <g transform="translate(265, 0)">
+      <rect x="-80" y="-15" width="160" height="30" rx="15" fill="#1e293b" stroke="#475569" stroke-width="1" />
+      <text x="0" y="5" text-anchor="middle" font-size="12" font-weight="600" fill="#34d399">🔓 Self-Hosted Stacks</text>
+    </g>
+  </g>
+
+  <!-- Bottom Code-Style Footer Line -->
+  <text class="code-font" x="600" y="380" text-anchor="middle" font-size="12" fill="#64748b">
+    MIT / AGPL-3.0 / Commercial SaaS • Automated Pipeline Orchestration • 2026 Edition
+  </text>
+</svg>
